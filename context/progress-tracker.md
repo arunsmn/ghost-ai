@@ -4,11 +4,11 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Current Phase
 
-- Design System & UI Primitives
+- Editor Chrome
 
 ## Current Goal
 
-- Design system complete. Move to next feature unit.
+- Editor chrome complete. Move to next feature unit.
 
 ## Completed
 
@@ -18,6 +18,11 @@ Update this file whenever the current phase, active feature, or implementation s
   - `lib/utils.ts` created with `cn()` helper (clsx + tailwind-merge)
   - shadcn components added: Button, Card, Dialog, Input, Tabs, Textarea, ScrollArea
   - `lucide-react` installed
+
+- 02-editor: base editor chrome components
+  - `components/editor/editor-navbar.tsx` — fixed top navbar with `PanelLeftOpen`/`PanelLeftClose` toggle, left/center/right sections
+  - `components/editor/project-sidebar.tsx` — floating overlay sidebar, slides in from left, "Projects" header, My Projects / Shared tabs with empty states, full-width New Project button
+  - Dialog pattern ready for future use via existing shadcn `Dialog` component with project color tokens
 
 ## In Progress
 
